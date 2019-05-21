@@ -17,11 +17,11 @@ class Human implements Mammal{
     }
     
 }
-class Zeebra implements Mammal{
+class Zebra implements Mammal{
 
     @Override
     public void drintMilk() {
-        System.out.println("Zeebra Drinking...");
+        System.out.println("Zebra Drinking...");
     }
     
 }
@@ -35,8 +35,8 @@ class Factory {
       if(mammalType.equalsIgnoreCase("Human")){
          return new Human();
          
-      } else if(mammalType.equalsIgnoreCase("Zeebra")){
-         return new Zeebra();
+      } else if(mammalType.equalsIgnoreCase("Zebra")){
+         return new Zebra();
          
       } 
       
@@ -58,7 +58,7 @@ public class Example3 {
       mammal1.drintMilk();
       
       //get an object of Mammal 
-      Mammal mammal2 = factory.getMammal("Zeebra");
+      Mammal mammal2 = factory.getMammal("Zebra");
 
       //call  drintMilk method of Human
       mammal2.drintMilk();
